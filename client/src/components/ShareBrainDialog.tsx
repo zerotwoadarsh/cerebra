@@ -103,7 +103,7 @@ const ShareBrainDialog: React.FC<ShareBrainDialogProps> = ({ onClose }) => {
       <DialogHeader>
         <DialogTitle className="text-2xl font-bold flex items-center">
           <Share2 className="w-6 h-6 mr-2" />
-          Share Your Brain
+          Share Your Cerebra
         </DialogTitle>
       </DialogHeader>
 

@@ -139,7 +139,7 @@ const Dashboard = () => {
               className="text-2xl font-bold cursor-pointer"
               onClick={() => navigate("/")}
             >
-              Brainly
+              Cerebra
             </h1>
             
           </motion.div>

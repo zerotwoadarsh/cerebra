@@ -94,7 +94,7 @@ const Signin = () => {
         >
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight">
-              Log in to <a onClick={() => navigate("/")} className="underline cursor-pointer">Brainly</a>
+              Log in to <a onClick={() => navigate("/")} className="underline cursor-pointer">Cerebra</a>
             </h1>
             <p className="text-muted-foreground mt-2">Enter your credentials to access your account.</p>
           </div>

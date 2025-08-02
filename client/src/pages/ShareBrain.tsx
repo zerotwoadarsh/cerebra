@@ -92,7 +92,7 @@ export default function ShareBrain() {
             className="text-2xl font-bold cursor-pointer"
             onClick={() => navigate('/')}
           >
-            Brainly
+            Cerebra
           </motion.h1>
 
           <div className="flex items-center space-x-3">

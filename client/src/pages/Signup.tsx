@@ -105,7 +105,7 @@ const Signup = () => {
         >
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold tracking-tight">
-              Create an account for <a onClick={() => navigate("/")} className="underline cursor-pointer">Brainly</a>
+              Create an account for <a onClick={() => navigate("/")} className="underline cursor-pointer">Cerebra</a>
             </h1>
             <p className="text-muted-foreground mt-2">Enter your details below to get started.</p>
           </div>
