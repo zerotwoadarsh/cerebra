@@ -1,6 +1,4 @@
-import AnimatedGridPattern from "@/components/animated-grid-pattern";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { ArrowUpRight, CirclePlay, Moon, Sun } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";

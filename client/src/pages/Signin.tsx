@@ -18,9 +18,6 @@ import { Toaster, toast } from "sonner";
 import axios from 'axios';
 import { Eye, EyeOff } from "lucide-react";
 import Footer from '@/components/Footer';
-import AnimatedGridPattern from '@/components/animated-grid-pattern';
-import { cn } from '@/lib/utils';
-import { useTheme } from '@/context/themeContext';
 import Threads from "@/components/Threads";
 
 const formSchema = z.object({
@@ -34,7 +31,6 @@ const Signin = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const { theme } = useTheme();
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
