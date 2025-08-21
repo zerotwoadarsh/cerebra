@@ -21,6 +21,7 @@ import Footer from '@/components/Footer';
 import AnimatedGridPattern from '@/components/animated-grid-pattern';
 import { cn } from '@/lib/utils';
 import { useTheme } from '@/context/themeContext';
+import Threads from "@/components/Threads";
 
 const formSchema = z.object({
   username: z.string().min(3, "Username must be at least 3 characters long"),
@@ -76,15 +77,29 @@ const Signin = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <AnimatedGridPattern
+        <motion.div
+        initial={{ scale: 0.95, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className="absolute inset-0 w-full h-full"
+      >
+        {/* <AnimatedGridPattern
           numSquares={40}
           maxOpacity={(theme === 'dark') ? 0.2 : 0.3}
           duration={1}
           className={cn(
             "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-            "inset-0 h-full w-full skew-y-12"
+            "inset-x-0 h-full skew-y-12"
           )}
-        />
+        /> */}
+        <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+          <Threads
+            amplitude={1}
+            distance={0}
+            enableMouseInteraction={true}
+          />
+        </div>
+      </motion.div>
         <Toaster />
         <motion.div
           className="relative z-10 w-full max-w-sm border border-white/20 bg-background/60 backdrop-blur-sm p-8 rounded-2xl shadow-xl"

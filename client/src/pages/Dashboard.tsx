@@ -153,7 +153,7 @@ const Dashboard = () => {
             <div className="w-full md:w-1/2 lg:w-2/3">
               <Input
                 type="search"
-                placeholder="Search your brain..."
+                placeholder="Search your Cerebra..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="bg-background"

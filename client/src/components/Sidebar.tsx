@@ -54,7 +54,7 @@ import {
             className="w-full justify-start"
           >
             <Share2 className="mr-2 h-4 w-4" />
-            {!isCollapsed && "Share Brain"}
+            {!isCollapsed && "Share Cerebra"}
           </Button>
         </nav>
   

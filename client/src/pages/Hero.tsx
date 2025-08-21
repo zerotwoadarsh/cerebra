@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Toaster } from "sonner";
 import { useTheme } from "@/context/themeContext";
 import Footer from "@/components/Footer";
+import Threads from "@/components/Threads";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="absolute inset-0 w-full h-full"
       >
-        <AnimatedGridPattern
+        {/* <AnimatedGridPattern
           numSquares={40}
           maxOpacity={(theme === 'dark') ? 0.2 : 0.3}
           duration={1}
@@ -34,7 +35,14 @@ const Hero = () => {
             "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
             "inset-x-0 h-full skew-y-12"
           )}
-        />
+        /> */}
+        <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+          <Threads
+            amplitude={1}
+            distance={0}
+            enableMouseInteraction={true}
+          />
+        </div>
       </motion.div>
       <motion.div
         className="relative z-10 text-center max-w-2xl"
