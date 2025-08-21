@@ -30,7 +30,7 @@ if (cluster.isPrimary) {
 
     // --- FIX IS HERE ---
     // Add your local development URL to the list of allowed origins.
-    const allowedOrigins = ["https://cerebra-brown.vercel.app", "http://localhost:5173"];
+    const allowedOrigins = ["https://cerebra-brown.vercel.app", "http://localhost:5173", "https://cerebra-side.vercel.app/"];
 
     app.use(
         cors({
